@@ -1,0 +1,67 @@
+ /* CSS File (Home.css) */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Navigation Bar */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+#hero {
+    background: url('assets/images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #d6533d;
+}
+ 
