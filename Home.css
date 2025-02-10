@@ -1,6 +1,4 @@
- /* CSS File (Home.css) */
-
-/* General Styles */
+ /* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +27,6 @@ header nav ul li {
     margin: 0 15px;
 }
 
-
 header nav ul li a {
     text-decoration: none;
     color: white;
@@ -42,7 +39,6 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('assets/images/hero.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 0;
@@ -64,4 +60,170 @@ header nav ul li a:hover {
 #hero button:hover {
     background-color: #d6533d;
 }
- 
+
+/* About Us Section */
+#about {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-item img, .about-item video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+}
+.about-item video {
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    object-fit: cover;
+    max-width: 510px;
+}
+
+/* Destinations Section */
+#destinations {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+ /* Contact Form Section */
+#contact {
+    padding: 50px 0;
+    background-color: #fafafa; 
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #ff6347;   
+    outline: none;
+}
+
+#contact form button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: #d6533d;
+}
+#contact form button:active {
+    transform: scale(0.98); 
+}
+/* Phone and City Input Styles */
+#contact form select,
+#contact form input[type="tel"] {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#contact form select:focus,
+#contact form input[type="tel"]:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+/* Adjust placeholder text color */
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #aaa;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}

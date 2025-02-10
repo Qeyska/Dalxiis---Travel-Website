@@ -29,15 +29,90 @@
         <button onclick="scrollToSection()">Explore More</button>
     </section>
 
-
     <section id="about">
         <h2>About Us</h2>
         <p>We are a travel agency dedicated to helping you explore amazing destinations worldwide.</p>
-        <img src="image/image-girl.jpeg" alt="About Us">
+        <div class="about-container">
+            <div class="about-item">
+                <img src="image/image-girl.jpeg" alt="image image-girl">
+                
+            </div>
+            <div class="about-item">
+                
+                <video controls>
+                    <source src="videos/boat.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
     </section>
+    
 
     
- 
+    <section id="destinations">
+        <h2>Top Destinations</h2>
+        <div class="destination-list">
+            <div class="destination">
+                <img src="image/paris.jpeg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Explore the beautiful city of Paris!</p>
+
+            </div>
+
+            <div class="destination">
+                <img src="image/New York (2).jpeg" alt="New York">
+                <h3>New York</h3>
+    
+                <p>Explore the beautiful city of New York!</p>
+
+            </div>
+            <div class="destination">
+
+                <img src="image/Tokyo.jpeg" alt="Tokyo">
+                <h3>Tokyo</h3>
+
+                <p>Explore the beautiful city of Tokyo!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <!-- Name -->
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+    
+            <!-- Email -->
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+    
+            <!-- Phone -->
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+    
+            <!-- City -->
+            <label for="city">Select Your City</label>
+            <select id="city" required>
+                <option value="">-- Select a city --</option>
+                <option value="Paris">Paris</option>
+                <option value="New York">New York</option>
+                <option value="Tokyo">Tokyo</option>
+               
+            </select>
+    
+            <!-- Message -->
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Enter your message" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dalxiis Travel. All rights reserved.</p>
+    </footer>
 
     <script src="Home.js"></script>
 </body>
